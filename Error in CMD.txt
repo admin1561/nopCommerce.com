@@ -1,0 +1,118 @@
+
+C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce>dir
+ Volume in drive C is Windows
+ Volume Serial Number is EA93-21D7
+
+ Directory of C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce
+
+03/28/2020  08:33 PM    <DIR>          .
+03/28/2020  08:33 PM    <DIR>          ..
+03/26/2020  12:19 AM             1,066 .classpath
+03/19/2020  06:02 PM               563 .project
+03/19/2020  06:02 PM    <DIR>          .settings
+03/28/2020  06:26 PM                 0 cd
+03/21/2020  03:23 PM    <DIR>          Configuration
+03/21/2020  05:19 PM    <DIR>          Drivers
+03/23/2020  04:25 PM             1,175 extent-config.xml
+03/21/2020  03:14 PM    <DIR>          log
+03/21/2020  03:08 PM             1,062 log4j.properties
+03/27/2020  06:08 PM               913 nopcommerce.xml
+03/28/2020  08:38 PM             2,812 pom.xml
+03/27/2020  07:31 PM                79 run.bat
+03/26/2020  05:17 PM    <DIR>          screenshot
+03/26/2020  05:09 PM    <DIR>          ScreenShot123
+03/19/2020  06:02 PM    <DIR>          src
+03/28/2020  08:33 PM    <DIR>          target
+03/27/2020  06:10 PM    <DIR>          test-output
+               8 File(s)          7,670 bytes
+              11 Dir(s)  927,424,446,464 bytes free
+
+C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce>cd
+C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce
+
+C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce>mvn clean install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< nopcommerce:nopcommerce >-----------------------
+[INFO] Building nopcommerce 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ nopcommerce ---
+[INFO] Deleting C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ nopcommerce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ nopcommerce ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ nopcommerce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ nopcommerce ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ nopcommerce ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] Suite file C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\testng.xml is not a valid file
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.308 s
+[INFO] Finished at: 2020-03-28T20:40:50-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M4:test (default-test) on project nopcommerce: There are test failures.
+[ERROR]
+[ERROR] Please refer to C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked processSuite file C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\testng.xml is not a valid file
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked processSuite file C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce\testng.xml is not a valid file
+[ERROR]         at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:675)
+[ERROR]         at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR]         at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:248)
+[ERROR]         at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1217)
+[ERROR]         at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1063)
+[ERROR]         at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:889)
+[ERROR]         at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR]         at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+[ERROR]         at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+[ERROR]         at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+[ERROR]         at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR]         at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR]         at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR]         at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR]         at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+[ERROR]         at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR]         at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR]         at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)
+[ERROR]         at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)
+[ERROR]         at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)
+[ERROR]         at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR]         at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR]         at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR]         at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+[ERROR]         at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+[ERROR]         at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+[ERROR]         at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+[ERROR]         at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce>

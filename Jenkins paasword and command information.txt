@@ -1,0 +1,9 @@
+d5109974ffb1481bac1a012946b64960
+
+http://localhost:8080/
+
+cd C:\Users\gkpat\eclipse-workspace\New richmond\nopcommerce>
+mvn clean install
+
+username -admin
+Jenkins pass-admin
